@@ -3292,7 +3292,7 @@ input::-moz-focus-inner {
 
 .contact-email {
   font-family: "Roboto", sans-serif;
-  font-size: 3.2rem;
+  font-size: 8rem;
   font-weight: 400;
   line-height: 1;
   margin: 5.6rem 0 8rem;
@@ -3366,7 +3366,7 @@ input::-moz-focus-inner {
   }
 
   .contact-infos {
-    font-size: 4rem;
+    font-size: 8rem;
   }
 
   .contact-infos h4 {
