@@ -3390,7 +3390,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:1024px) {
   .contact-email {
-    font-size: 7.2rem;
+    font-size: 4rem;
   }
 
   .contact-infos {
@@ -3409,7 +3409,7 @@ input::-moz-focus-inner {
   }
 
   .contact-email {
-    font-size: 9vw;
+    font-size: 4rem;
   }
 
   .contact-infos {
