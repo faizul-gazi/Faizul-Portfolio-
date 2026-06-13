@@ -12,6 +12,12 @@ import Footer from './components/Footer'
 function App() {
   const [loading, setLoading] = useState(true)
   const [theme, setTheme] = useState(() => {
+    const hasReset = localStorage.getItem('theme_reset_light_v1')
+    if (!hasReset) {
+      localStorage.setItem('theme_reset_light_v1', 'true')
+      localStorage.setItem('theme', 'light')
+      return 'light'
+    }
     return localStorage.getItem('theme') || 'light'
   })
 
