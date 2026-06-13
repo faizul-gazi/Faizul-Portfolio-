@@ -30,7 +30,7 @@ function App() {
     
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 900)
+    }, 350)
     return () => clearTimeout(timer)
   }, [])
 
@@ -43,29 +43,28 @@ function App() {
         <div className="bg-glow bg-glow-3"></div>
       </div>
 
-      {/* Preloader screen */}
-      {loading && (
-        <div id="preloader">
-          <div id="loader"></div>
-        </div>
-      )}
+      {/* Preloader screen - Fades out smoothly using CSS transition */}
+      <div
+        id="preloader"
+        className={`transition-opacity duration-500 ease-out ${
+          loading ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+      >
+        <div id="loader"></div>
+      </div>
 
-      {/* Main website layouts */}
-      {!loading && (
-        <>
-          <Header theme={theme} toggleTheme={() => setTheme(prev => prev === 'dark' ? 'light' : 'dark')} />
-          <main>
-            <Hero />
-            <Works />
-            <Experience />
-            <Services />
-            <About />
-            <Testimonials />
-            <Contact />
-          </main>
-          <Footer />
-        </>
-      )}
+      {/* Main website layouts - Rendered immediately so browser pre-fetches assets */}
+      <Header theme={theme} toggleTheme={() => setTheme(prev => prev === 'dark' ? 'light' : 'dark')} />
+      <main>
+        <Hero />
+        <Works />
+        <Experience />
+        <Services />
+        <About />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
     </>
   )
 }
