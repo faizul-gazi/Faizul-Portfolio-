@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* ===================================================================
+ * Gazi Faizul Islam - Tailwind CSS v4 Theme Configuration
+ * =================================================================== */
+
+:root {
+  /* Light Theme Values (Default) */
+  --color-bg-primary: #f8fafc;
+  --color-bg-secondary: #ffffff;
+  --color-text-main: #0f172a;
+  --color-text-muted: #475569;
+  --color-glass-border: rgba(15, 23, 42, 0.07);
+  --bg-glow-opacity: 0.08;
+  --bg-glow-blend: normal;
+}
+
+.dark {
+  /* Dark Theme Values (Bright Dark Theme) */
+  --color-bg-primary: #05070f;
+  --color-bg-secondary: #0c0f19;
+  --color-text-main: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-glass-border: rgba(255, 255, 255, 0.07);
+  --bg-glow-opacity: 0.28;
+  --bg-glow-blend: screen;
+}
+
+@theme {
+  /* Fonts Override (Professional & Formal) */
+  --font-headings: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Theme color bindings linked to CSS custom properties */
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-text-main: var(--color-text-main);
+  --color-text-muted: var(--color-text-muted);
+  --color-glass-border: var(--color-glass-border);
+  
+  /* Accent Colors (Consistent in both themes for a bright, vibrant tech look) */
+  --color-accent-pink: #d946ef;
+  --color-accent-violet: #6366f1;
+  --color-accent-cyan: #00f2fe;
+}
+
+/* ===================================================================
+ * # Custom Global Settings
+ * =================================================================== */
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-main) !important;
+  font-family: var(--font-headings) !important;
+}
+
+p {
+  color: var(--color-text-muted);
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(127, 0, 255, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 0, 127, 0.5);
+}
+
+/* ===================================================================
+ * # Background Ambient Glows & Preloader
+ * =================================================================== */
+.bg-glow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(160px);
+  opacity: var(--bg-glow-opacity);
+  mix-blend-mode: var(--bg-glow-blend);
+  transition: all 0.5s ease;
+}
+
+.bg-glow-1 {
+  top: -15%;
+  right: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, var(--color-accent-pink) 0%, transparent 70%);
+}
+
+.bg-glow-2 {
+  bottom: -10%;
+  left: -10%;
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(circle, var(--color-accent-cyan) 0%, transparent 70%);
+}
+
+.bg-glow-3 {
+  top: 35%;
+  left: 20%;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, var(--color-accent-violet) 0%, transparent 70%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-custom {
+  animation: spin 1s infinite linear;
+}
+
+/* Custom follower cursor styling is now handled directly by Tailwind classes inside CustomCursor.jsx */
+
+/* ===================================================================
+ * # Hero Liquid Image Morphing Keyframes
+ * =================================================================== */
+@keyframes liquidShape {
+  0% { border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; }
+  50% { border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%; }
+  100% { border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%; }
+}
+
+.animate-liquid {
+  animation: liquidShape 10s ease-in-out infinite alternate;
+}
+
+/* Typewriter Blink Cursor */
+@keyframes cursorBlink {
+  50% { opacity: 0; }
+}
+
+.animate-cursor-blink {
+  animation: cursorBlink 0.9s infinite;
+}
+
+/* Lightbox Animation Zoom */
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-zoom-in {
+  animation: zoomIn 0.3s ease-out;
+}
+
+/* Preloader Layout */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-bg-primary);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+#loader {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--color-glass-border);
+  border-radius: 50%;
+  border-top-color: var(--color-accent-pink);
+  animation: spin 1s infinite linear;
+}
