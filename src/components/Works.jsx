@@ -110,7 +110,12 @@ function Works() {
                 </div>
                 {/* Wrap image in click handler for zoom lightbox */}
                 <div className="cursor-zoom-in overflow-hidden relative" onClick={(e) => handleZoomClick(e, project)}>
-                  <img src={project.img} alt={project.title} className="w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img 
+                    src={project.img} 
+                    alt={project.title} 
+                    loading="lazy" 
+                    className="w-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                  />
                   {/* Glowing overlay hover effect with zoom icon */}
                   <div className="absolute inset-0 bg-accent-pink/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                     <span className="w-9 h-9 rounded-full bg-white/95 dark:bg-black/90 text-accent-pink flex items-center justify-center shadow-md transform scale-75 group-hover:scale-100 transition-all duration-300">

@@ -67,6 +67,7 @@ function Testimonials() {
                   <img
                     src={item.avatar}
                     alt={item.name}
+                    loading="lazy"
                     className="w-14 h-14 rounded-full border-2 border-white/20"
                   />
                   <cite className="not-italic">
