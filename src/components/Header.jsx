@@ -6,11 +6,11 @@ function Header({ theme, toggleTheme }) {
   const [activeSection, setActiveSection] = useState('intro')
 
   const navLinks = [
-    { id: 'intro', label: 'Intro' },
+    { id: 'intro', label: 'Home' },
+    { id: 'works', label: 'Projects' },
+    { id: 'experience', label: 'Experience' },
     { id: 'about', label: 'About' },
-    { id: 'services', label: 'Services' },
-    { id: 'works', label: 'Works' },
-    { id: 'contact', label: 'Say Hello' }
+    { id: 'contact', label: 'Get In Touch' }
   ]
 
   useEffect(() => {
@@ -24,7 +24,7 @@ function Header({ theme, toggleTheme }) {
 
       // 2. Scroll Spy calculation
       const scrollPosition = window.scrollY + 180
-      const sections = ['intro', 'about', 'services', 'works', 'contact']
+      const sections = ['intro', 'works', 'experience', 'about', 'contact']
       
       for (const section of sections) {
         const el = document.getElementById(section)

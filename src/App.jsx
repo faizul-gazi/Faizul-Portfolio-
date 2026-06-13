@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
 import Works from './components/Works'
+import Experience from './components/Experience'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -55,9 +56,10 @@ function App() {
           <Header theme={theme} toggleTheme={() => setTheme(prev => prev === 'dark' ? 'light' : 'dark')} />
           <main>
             <Hero />
-            <About />
-            <Services />
             <Works />
+            <Experience />
+            <Services />
+            <About />
             <Testimonials />
             <Contact />
           </main>
