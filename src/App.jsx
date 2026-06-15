@@ -63,10 +63,10 @@ function App() {
       <Header theme={theme} toggleTheme={() => setTheme(prev => prev === 'dark' ? 'light' : 'dark')} />
       <main>
         <Hero />
+        <About />
         <Works />
         <Experience />
         <Services />
-        <About />
         <Testimonials />
         <Contact />
       </main>

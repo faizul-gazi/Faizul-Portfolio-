@@ -7,9 +7,9 @@ function Header({ theme, toggleTheme }) {
 
   const navLinks = [
     { id: 'intro', label: 'Home' },
+    { id: 'about', label: 'About' },
     { id: 'works', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
-    { id: 'about', label: 'About' },
     { id: 'contact', label: 'Get In Touch' }
   ]
 
@@ -24,7 +24,7 @@ function Header({ theme, toggleTheme }) {
 
       // 2. Scroll Spy calculation
       const scrollPosition = window.scrollY + 180
-      const sections = ['intro', 'works', 'experience', 'about', 'contact']
+      const sections = ['intro', 'about', 'works', 'experience', 'contact']
       
       for (const section of sections) {
         const el = document.getElementById(section)
@@ -120,7 +120,7 @@ function Header({ theme, toggleTheme }) {
             </li>
             <li>
               <a
-                href="mailto:faizul.thedevloper@gmail.com"
+                href="mailto:faizul.thedeveloper@gmail.com"
                 className="text-text-muted hover:text-accent-pink hover:-translate-y-0.5 transition-all duration-300 block"
               >
                 <i className="fas fa-envelope" aria-hidden="true"></i>

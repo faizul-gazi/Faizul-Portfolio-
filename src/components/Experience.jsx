@@ -5,72 +5,60 @@ function Experience() {
 
   const experienceData = [
     {
-      company: 'QuickTutor',
-      role: 'Frontend Developer',
-      timeframe: 'Jan 2024 - Present',
+      company: 'GoInnovior Limited',
+      role: 'Software Project Development Intern',
+      timeframe: 'Feb 2026 - Present',
       bullets: [
-        'Developed and shipped highly interactive, responsive web applications for QuickTutor learning platform.',
-        'Built and shipped student-tutor dashboards and a custom React admin panel for learning material control.',
-        'Collaborated closely with UX designers to convert Figma mockups into pixel-perfect Tailwind layouts.'
+        'Building and maintaining web applications.',
+        'Working with frontend and backend technologies.',
+        'Collaborating in real-world development projects.'
       ]
     },
     {
-      company: 'Gadget Shop',
-      role: 'Frontend Developer',
-      timeframe: 'Jul 2023 - Dec 2023',
+      company: 'Freelance & Projects',
+      role: 'MERN Stack Developer',
+      timeframe: '2023 - 2026',
       bullets: [
-        'Improved existing gadget e-commerce systems by solving navigation bottlenecks, filter bugs, and cart issues.',
-        'Optimized core web vitals and bundle performance, resulting in faster load times and page responsiveness.',
-        'Designed and integrated modern administrative controls for inventory management.'
-      ]
-    },
-    {
-      company: 'Predictive ML',
-      role: 'ML & Web Developer',
-      timeframe: 'Jan 2023 - Jun 2023',
-      bullets: [
-        'Performed exploratory data analysis and data preprocessing on 54K entry diamond datasets using Python.',
-        'Built and optimized a machine learning regression model to predict diamond prices based on cut and clarity.',
-        'Developed a clean Flask web interface backend and React frontend for price prediction tools.'
+        'Built and shipped highly responsive, pixel-perfect web applications using React.js and Next.js.',
+        'Developed scalable full-stack applications with Node.js, Express.js, and MongoDB databases.',
+        'Researched and integrated Machine Learning & AI techniques into modern web layouts.'
       ]
     }
   ]
 
   const skillsData = [
     {
-      category: 'Web Design',
-      items: [
-        { name: 'UI/UX Design', icon: 'fas fa-palette text-accent-pink' },
-        { name: 'Responsive Design', icon: 'fas fa-desktop text-accent-violet' },
-        { name: 'Wireframing', icon: 'fas fa-drafting-compass text-accent-cyan' },
-        { name: 'User Research', icon: 'fas fa-search text-accent-pink' }
-      ]
-    },
-    {
-      category: 'Frontend',
+      category: 'Core Languages',
       items: [
         { name: 'JavaScript', icon: 'fab fa-js text-amber-400' },
-        { name: 'ReactJS', icon: 'fab fa-react text-sky-400' },
-        { name: 'NextJS', icon: 'svg-next' },
-        { name: 'CSS3', icon: 'fab fa-css3-alt text-blue-500' },
-        { name: 'Tailwind CSS', icon: 'fas fa-wind text-teal-400' }
+        { name: 'TypeScript', icon: 'fas fa-code text-blue-400' },
+        { name: 'HTML5 & CSS3', icon: 'fab fa-html5 text-orange-500' }
       ]
     },
     {
-      category: 'Backend',
+      category: 'Libraries & Styles',
       items: [
-        { name: 'NodeJS', icon: 'fab fa-node-js text-emerald-500' },
+        { name: 'React.js', icon: 'fab fa-react text-sky-400' },
+        { name: 'Next.js', icon: 'svg-next' },
+        { name: 'Tailwind CSS', icon: 'fas fa-wind text-teal-400' },
+        { name: 'Bootstrap', icon: 'fab fa-bootstrap text-purple-500' }
+      ]
+    },
+    {
+      category: 'Backend & DB',
+      items: [
+        { name: 'Node.js', icon: 'fab fa-node-js text-emerald-500' },
+        { name: 'Express.js', icon: 'fas fa-server text-indigo-400' },
         { name: 'MongoDB', icon: 'fas fa-database text-green-500' },
-        { name: 'ExpressJS', icon: 'fas fa-server text-indigo-400' }
+        { name: 'REST APIs', icon: 'fas fa-project-diagram text-cyan-400' }
       ]
     },
     {
-      category: 'Soft Skills',
+      category: 'Tools & Details',
       items: [
-        { name: 'Effective communication', icon: 'fas fa-comments text-accent-pink' },
-        { name: 'Collaboration', icon: 'fas fa-users text-accent-violet' },
-        { name: 'Commitment', icon: 'fas fa-shield-alt text-accent-cyan' },
-        { name: 'Leadership', icon: 'fas fa-crown text-amber-500' }
+        { name: 'Git & GitHub', icon: 'fab fa-github text-text-main' },
+        { name: 'Responsive Design', icon: 'fas fa-desktop text-accent-violet' },
+        { name: 'English & Bangla', icon: 'fas fa-language text-accent-pink' }
       ]
     }
   ]

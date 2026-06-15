@@ -4,33 +4,33 @@ function Services() {
   const services = [
     {
       num: '01',
-      title: 'React.js Front-End Development',
-      desc: 'I build modern, interactive, and high-performing web interfaces using React.js. From dynamic components to API integration, I deliver clean, maintainable React projects.'
+      title: 'Full-Stack MERN Development',
+      desc: 'I develop highly functional, secure, and scalable web applications using MongoDB, Express.js, React.js, and Node.js. I design clean backend architectures and integrate robust APIs.'
     },
     {
       num: '02',
-      title: 'Figma/PSD to Pixel-Perfect Frontend Conversion',
-      desc: 'I convert Figma, PSD, XD, and image files into responsive, pixel-perfect websites using HTML, CSS, Tailwind, Bootstrap, and React. Every section is clean, optimized, and mobile-friendly.'
+      title: 'Next.js & SEO Optimization',
+      desc: 'I create highly optimized, server-side rendered (SSR), and SEO-friendly web applications using Next.js. I focus on core web vitals, speed performance, and modern web standards.'
     },
     {
       num: '03',
-      title: 'Website Redesign & UI Improvement',
-      desc: 'I improve outdated or poorly designed websites by enhancing UI/UX, navigation structure, speed, responsiveness, and overall user experience for better performance.'
+      title: 'Pixel-Perfect Frontend Conversion',
+      desc: 'I specialize in turning Figma and UI/UX designs into responsive, pixel-perfect frontends. I implement clean layouts with React.js, Tailwind CSS, and Bootstrap.'
     },
     {
       num: '04',
-      title: 'Landing Page Design & Development',
-      desc: 'I design and develop high-converting landing pages using HTML, CSS, Tailwind, and React. Perfect for marketing campaigns, product launches, and business promotion.'
+      title: 'Machine Learning & AI Integration',
+      desc: 'Leveraging my academic research background, I build and integrate ML and AI prediction systems into web applications, creating intelligent and data-driven user experiences.'
     },
     {
       num: '05',
-      title: 'Basic Digital Marketing Setup',
-      desc: 'I help businesses set up their digital foundation—audience targeting, content direction, branding ideas, and essential optimization for better visibility and engagement.'
+      title: 'UI/UX & Performance Tuning',
+      desc: 'I improve existing web platforms by fixing user flows, solving navigation bottlenecks, and optimizing overall speed and responsiveness to ensure a premium user experience.'
     },
     {
       num: '06',
-      title: 'Machine Learning Model Development',
-      desc: 'I build and train ML models (Regression, Classification, Clustering) using scikit-learn. I also evaluate, optimize, and deliver ready-to-use prediction systems or small web apps.'
+      title: 'Digital Marketing & Strategy',
+      desc: 'Combining technical skills with digital marketing insight, I analyze user behavior to optimize product positioning, search discoverability, and strategic user engagement.'
     }
   ]
 

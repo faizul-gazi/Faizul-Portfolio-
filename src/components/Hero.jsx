@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 function Hero() {
-  const words = ['React.js', 'UI/UX Design', 'Modern Web Apps', 'AI & ML Research']
+  const words = ['React.js & Next.js', 'MERN Stack Apps', 'Modern Web Apps', 'AI & ML Research']
   const [wordIndex, setWordIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
@@ -62,7 +62,7 @@ function Hero() {
             Hello, I'm Gazi Faizul Islam
           </h3>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-text-main leading-tight font-headings mb-6">
-            Front-End Developer <br />
+            MERN Stack Developer <br />
             specializing in <span className="bg-gradient-to-r from-accent-pink via-accent-violet to-accent-cyan bg-clip-text text-transparent font-extrabold">{text}</span>
             <span className="text-accent-cyan font-light ml-1 animate-cursor-blink">|</span>
           </h1>

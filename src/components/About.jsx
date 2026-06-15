@@ -13,17 +13,22 @@ function About() {
 
   return (
     <section id="about" className="py-24 md:py-32 relative z-10 bg-bg-primary">
-      
+
       {/* About Me Details */}
       <div className="max-w-6xl w-[90%] mx-auto mb-16">
         <h2 className="text-xs uppercase tracking-[0.3em] text-text-main font-semibold font-headings relative pl-0 pt-6 before:content-[''] before:block before:h-[2px] before:w-20 before:bg-gradient-to-r before:from-accent-pink before:to-accent-violet before:absolute before:top-0 before:left-0 mb-10">
           About Me
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12">
-          <p className="text-xl md:text-2xl font-light text-text-main leading-relaxed border-l-2 border-accent-pink pl-6 col-span-1 md:col-span-2">
-            I'm a frontend developer and React.js enthusiast. I enjoy turning ideas into clean, modern, pixel-perfect user interfaces. Proficient in HTML, CSS, JavaScript, Tailwind, and React, with an interest in crafting responsive, user-friendly web experiences.
-          </p>
+          <div className="text-xl md:text-2xl font-light text-text-main leading-relaxed border-l-2 border-accent-pink pl-6 col-span-1 md:col-span-2 space-y-6">
+            <p>
+              I am a MERN Stack Developer with 3+ years of experience developing highly functional, responsive, and user-friendly web applications. The start of my career was focused on front-end development; I gained excellent proficiency in React.js and creating pixel-perfect designs from UI design.
+            </p>
+            <p>
+              As I progressed in my career, I moved on to full-stack development using MongoDB, Express.js, Node.js, and React. I use Next.js for creating highly optimized and SEO friendly applications with modern techniques.
+            </p>
+          </div>
           <div className="text-base text-text-muted leading-relaxed">
             <p className="mb-4">
               Alongside development, I’m actively involved in research and have co-authored multiple academic papers in the fields of Machine Learning and AI. My passion for technology drives me to continuously learn and stay updated with the latest trends in web development and AI.
