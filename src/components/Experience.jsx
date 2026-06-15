@@ -8,6 +8,7 @@ function Experience() {
       company: 'GoInnovior Limited',
       role: 'Software Project Development Intern',
       timeframe: 'Feb 2026 - Present',
+      url: 'https://www.goinnovior.com/',
       bullets: [
         'Building and maintaining web applications.',
         'Working with frontend and backend technologies.',
@@ -18,6 +19,7 @@ function Experience() {
       company: 'Freelance & Projects',
       role: 'MERN Stack Developer',
       timeframe: '2023 - 2026',
+      url: '',
       bullets: [
         'Built and shipped highly responsive, pixel-perfect web applications using React.js and Next.js.',
         'Developed scalable full-stack applications with Node.js, Express.js, and MongoDB databases.',
@@ -100,7 +102,19 @@ function Experience() {
             <div className="absolute inset-0 bg-gradient-to-tr from-accent-pink/5 via-transparent to-accent-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
             <h3 className="text-xl md:text-2xl font-bold text-text-main font-headings relative z-10">
-              {experienceData[activeTab].role} <span className="text-accent-pink">@ {experienceData[activeTab].company}</span>
+              {experienceData[activeTab].role}{' '}
+              {experienceData[activeTab].url ? (
+                <a
+                  href={experienceData[activeTab].url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent-pink hover:underline transition-all duration-300"
+                >
+                  @ {experienceData[activeTab].company}
+                </a>
+              ) : (
+                <span className="text-accent-pink">@ {experienceData[activeTab].company}</span>
+              )}
             </h3>
             <span className="text-xs text-text-muted font-headings font-semibold mt-1.5 block tracking-wider uppercase relative z-10">
               {experienceData[activeTab].timeframe}
